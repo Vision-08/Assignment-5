@@ -1,8 +1,13 @@
 
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-</style>
+
+.hind madurai> {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
 
 body {
   margin: 0;
@@ -23,6 +28,7 @@ body {
 .nav-left {
   display: flex;
   align-items: center;
+  gap: 8px;
 }
 
 .logo {
@@ -34,12 +40,14 @@ body {
 .site-name {
   font-size: 18px;
   font-weight: bold;
+  color: #0f5132;
 }
 
 .nav-right {
   display: flex;
   align-items: center;
   gap: 15px;
+  font-weight: bold;
 }
 
 .nav-item {
@@ -91,8 +99,9 @@ body {
 }
 
 .hero-slogan {
-  font-size: 14px;
-  max-width: 600px;
+  font-size: 12px;
+  max-width: 700px;
   margin: 0 auto;
   color: #e2e2e2;
+  font-weight: bold;
 }

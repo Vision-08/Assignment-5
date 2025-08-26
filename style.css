@@ -1,17 +1,6 @@
-
-
-
-.hind madurai> {
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
-
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Hind Madurai', sans-serif;
   background-color: #f9f9f9;
 }
 
@@ -32,15 +21,15 @@ body {
 }
 
 .logo {
-  width: 40px;
-  height: 40px;
+  width: 49.37px;
+  height: 49.99px;
   margin-right: 8px;
 }
 
 .site-name {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
-  color: #0f5132;
+  color: #006747;
 }
 
 .nav-right {
@@ -64,7 +53,7 @@ body {
 }
 
 .copy-btn {
-  background: #d1f7d1;
+  background: #00A63E;
   border: none;
   padding: 6px 14px;
   border-radius: 20px;
@@ -73,190 +62,38 @@ body {
 }
 
 .copy-btn:hover {
-  background: #baf3ba;
+  background: #00A63E;
 }
 
 /* Hero Section */
 .hero {
   text-align: center;
   padding: 50px 20px;
-  background: linear-gradient(90deg, #0f5132, #198754);
+  background: linear-gradient(90deg, #013223, #006747, #013223);
   color: white;
 }
 
 .hero-logo img {
-  width: 80px;
-  height: 80px;
+  width: 90.83px;
+  height: 91.97px;
   border-radius: 50%;
   border: 4px solid white;
   margin-bottom: 15px;
 }
 
 .hero-title {
+  font-family: 'Playfair Display', serif;
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .hero-slogan {
-  font-size: 12px;
+  font-size: 14px;
   max-width: 700px;
   margin: 0 auto;
   color: #e2e2e2;
-  font-weight: bold;
-}
-
-.main-container {
-  display: flex;
-  gap: 20px;
-  padding: 20px;
-}
-
-/* Card Section */
-.card-section {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  flex: 3;
-}
-
-/* Card Styling */
-.card {
-  background: #fff;
-  padding: 16px;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.card-icon {
-  width: 40px;
-  height: 40px;
-}
-
-.heart-btn {
-  background: none;
-  border: none;
-  font-size: 18px;
-  cursor: pointer;
-}
-
-.card-title {
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.card-subtitle {
-  font-size: 13px;
-  color: #555;
-}
-
-.card-number {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.badge {
-  display: inline-block;
-  background: #eee;
-  color: #444;
-  padding: 2px 8px;
-  border-radius: 12px;
-  font-size: 12px;
-}
-
-.card-actions {
-  display: flex;
-  gap: 8px;
-  margin-top: auto;
-}
-
-.copy-btn, .call-btn {
-  flex: 1;
-  border: none;
-  padding: 8px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.copy-btn {
-  background: #f0f0f0;
-}
-
-.copy-btn:hover {
-  background: #ddd;
-}
-
-.call-btn {
-  background: #28a745;
-  color: white;
-}
-
-.call-btn:hover {
-  background: #218838;
-}
-
-/* History Section */
-.history-section {
-  flex: 1;
-  background: #fff;
-  padding: 16px;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.history-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 12px;
-}
-
-.clear-btn {
-  background: #28a745;
-  border: none;
-  padding: 6px 12px;
-  border-radius: 6px;
-  color: #fff;
-  cursor: pointer;
-}
-
-.history-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.history-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 8px;
-  border-bottom: 1px solid #eee;
-}
-
-.history-item strong {
-  font-size: 14px;
-}
-
-.history-item p {
-  margin: 0;
-  font-size: 12px;
-  color: #555;
-}
-
-.time {
-  font-size: 12px;
-  color: #666;
+  font-weight: 600;
 }
 
 /* Main Layout */
@@ -282,6 +119,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  min-width: 255px;
+  min-height: 220px;
 }
 
 .card-header {
@@ -303,17 +142,22 @@ body {
 }
 
 .card-title {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
+  margin: 0;
 }
 
 .card-subtitle {
-  font-size: 13px;
+  font-size: 14px;
   color: #555;
+  margin: 2px 0 0 0;
+  display: inline-block;   
+  padding: 2px 6px;              
+  border-radius: 6px; 
 }
 
 .card-number {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
 }
 
@@ -350,7 +194,7 @@ body {
 }
 
 .call-btn {
-  background: #28a745;
+  background: #00A63E;
   color: white;
 }
 

@@ -59,3 +59,29 @@ callButtons.forEach(function(btn) {
   });
 });
 
+// ===== Clear History Button =====
+var clearBtn = document.querySelector(".clear-btn");
+clearBtn.addEventListener("click", function() {
+  historyList.innerHTML = "";
+});
+
+// ===== Copy Button Functionality (Challenge Part) =====
+var copyButtons = document.querySelectorAll(".copy-btn");
+var copyBtnNav = document.getElementById("copyBtn");
+var copyCount = 0;
+
+copyButtons.forEach(function(btn) {
+  btn.addEventListener("click", function() {
+    var card = btn.closest(".card");
+    var serviceNumber = card.querySelector(".card-number").textContent;
+
+    // Copy number to clipboard
+    navigator.clipboard.writeText(serviceNumber).then(function() {
+      alert("Copied: " + serviceNumber);
+
+      // Increase copy count
+      copyCount++;
+      copyBtnNav.textContent = copyCount + " Copy";
+    });
+  });
+});

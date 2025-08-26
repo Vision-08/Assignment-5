@@ -34,4 +34,28 @@ callButtons.forEach(function(btn) {
       return;
     }
 
-    
+    // Deduct 20 coins
+    coinCount -= 20;
+    coinCountEl.textContent = coinCount;
+
+    // Show alert
+    alert("Calling " + serviceName + " at " + serviceNumber);
+
+    // Get current local time
+    var now = new Date();
+    var time = now.toLocaleTimeString(); // eg: "3:15:22 PM"
+
+    // Add to call history
+    var li = document.createElement("li");
+    li.classList.add("history-item");
+    li.innerHTML = `
+      <div>
+        <strong>${serviceName}</strong>
+        <p>${serviceNumber}</p>
+      </div>
+      <span class="time">${time}</span>
+    `;
+    historyList.appendChild(li);
+  });
+});
+

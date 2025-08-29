@@ -85,35 +85,3 @@ copyButtons.forEach(function(btn) {
     });
   });
 });
-
-
-// ===== Hamburger Toggle for Mobile History =====
-var hamburger = document.getElementById("hamburger");
-var mobileHistory = document.getElementById("mobileHistory");
-
-hamburger.addEventListener("click", function () {
-  mobileHistory.classList.toggle("active");
-});
-
-// ===== Show More Cards =====
-var cardSection = document.getElementById("cardSection");
-var showMoreBtn = document.getElementById("showMoreBtn");
-
-function updateCardsVisibility() {
-  var cards = cardSection.querySelectorAll(".card");
-  cards.forEach((card, index) => {
-    if (index < 4) {
-      card.style.display = "flex"; // show first 4
-    } else {
-      card.style.display = "none"; // hide rest
-    }
-  });
-}
-
-updateCardsVisibility();
-
-showMoreBtn.addEventListener("click", function () {
-  var cards = cardSection.querySelectorAll(".card");
-  cards.forEach(card => (card.style.display = "flex"));
-  showMoreBtn.style.display = "none"; // hide button after showing all
-});

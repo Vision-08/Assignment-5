@@ -255,3 +255,67 @@ body {
   font-size: 12px;
   color: #666;
 }
+
+
+/* ================== MOBILE RESPONSIVE ================== */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .card-section {
+    grid-template-columns: 1fr; /* single column */
+  }
+
+  /* Hide desktop history */
+  .history-section {
+    display: none;
+  }
+
+  /* Hamburger */
+  .hamburger {
+    font-size: 24px;
+    cursor: pointer;
+    display: block;
+    padding: 6px 10px;
+    border-radius: 6px;
+    background: #006747;
+    color: white;
+  }
+
+  /* Slide-out History */
+  .mobile-history {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100%;
+    background: white;
+    box-shadow: -2px 0 8px rgba(0,0,0,0.2);
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+    overflow-y: auto;
+  }
+
+  .mobile-history.active {
+    right: 0;
+  }
+
+  /* Show More button */
+  .show-more-container {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .show-more-btn {
+    background: #006747;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
